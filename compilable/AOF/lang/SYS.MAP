@@ -1,0 +1,20 @@
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 14:59:03 2014    Page   1
+
+Command line: C:\ASM68K\LNK68K.EXE  -c LANG.CMD -m 
+
+LIST D
+*MAKE  ABS LANGL
+*MAKE  @echo .
+*MAKE  @echo .
+
+SECT LANG=3D800H
+COMMON WORK=100000H
+INDEX ?A5,WORK,8000H
+LOAD LANG2,LANG3
+FATAL ERROR: (319) Cannot Open File LANG2.OBJ
+
+
+WARNING: (311) Link Not Completed 
+
+
+ Errors: 1, Warnings: 1

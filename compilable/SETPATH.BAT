@@ -1,0 +1,1 @@
+set path=%path%;c:\asm68k

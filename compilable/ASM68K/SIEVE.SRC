@@ -1,0 +1,121 @@
+;	Microtec(R) Research Inc. 68K C Compiler 4.4 
+;	Host Operating System - MS-DOS
+;	Command Line Options Specified:
+;		-S -RiC:\MCC68K\tmp\sieve.1 -o sieve.src -Fsm sieve.c 
+
+	TTL	sieve.c
+;	MCC68K 4.4  s MSD021494 ms032494
+	OPT	NOABSPCADD,E,NOPCR,P=68000,CASE
+	NAME	sieve
+	XCOM _s,6
+	XCOM _flags,17
+	SECTION strings,,R
+_.S0:	DC.B	' prime %d = %d',10,0
+_.S1:	DC.B	10,'%d primes',10,0
+	SECTION code,,C
+	XREF	_printf
+;/* sieve.c -- Eratosthenes Sieve prime number calculation */
+;/* scaled down with MAX_PRIME set to 17 instead of 8091 */
+;
+;#define MAX_ITER	1
+;#define MAX_PRIME	17
+;struct {
+;  char a;
+;  int i;
+;} s;
+;char	flags[MAX_PRIME];
+;
+;main ()
+;{
+	XDEF	_main
+_main:
+;*** allocation of local variables ***
+;	i = d2
+;	k = d3
+;	prime = d5
+;	count = d4
+;	iter = d6
+	movem.l	d2/d3/d4/d5/d6,-(sp)
+;	register int i,k;
+;	int	prime,count,iter;
+;
+;	for (iter = 1;iter<=MAX_ITER;iter++)
+	moveq	#1,d6
+	bra.s	L2
+;		{
+;		count = 0;
+L1:
+	moveq	#0,d4
+;		for(i = 0; i<MAX_PRIME; i++)
+	moveq	#0,d2
+	bra.s	L6
+;			flags[i] = 1;
+L5:
+	movea.l	#_flags,a0
+	move.b	#1,(a0,d2.w)
+	addq.l	#1,d2
+L6:
+	moveq	#17,d0
+	cmp.l	d2,d0
+	bgt.s	L5
+;		for(i = 0; i<MAX_PRIME; i++)
+	moveq	#0,d2
+	bra.s	L10
+;			if(flags[i])
+L9:
+	movea.l	#_flags,a0
+	tst.b	(a0,d2.w)
+	beq.s	L13
+;				{
+;				prime = i + i + 3;
+	move.l	d2,d5
+	add.l	d2,d5
+	addq.l	#3,d5
+;				k = i + prime;
+	move.l	d2,d3
+	bra.s	L20001
+;				while (k < MAX_PRIME)
+;					{
+;					flags[k] = 0;
+L14:
+	movea.l	#_flags,a0
+	clr.b	(a0,d3.w)
+;					k += prime;
+L20001:
+	add.l	d5,d3
+	moveq	#17,d0
+	cmp.l	d3,d0
+	bgt.s	L14
+;					}
+;				count++;
+	addq.l	#1,d4
+;				printf(" prime %d = %d\n", count, prime);
+	move.l	d5,-(sp)
+	move.l	d4,-(sp)
+	pea	_.S0
+	jsr	_printf
+	lea.l	12(sp),sp
+L13:
+	addq.l	#1,d2
+L10:
+	moveq	#17,d0
+	cmp.l	d2,d0
+	bgt.s	L9
+	addq.l	#1,d6
+L2:
+	moveq	#1,d0
+	cmp.l	d6,d0
+	bge.s	L1
+;				}
+;		}
+;	printf("\n%d primes\n",count);
+	move.l	d4,-(sp)
+	pea	_.S1
+	jsr	_printf
+	addq.l	#8,sp
+;}
+	movem.l	(sp)+,d2/d3/d4/d5/d6
+	rts
+;	 code: 138 bytes   stack: 0 bytes
+	END
+; code: 138 bytes,  const: 28 bytes

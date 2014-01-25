@@ -1,0 +1,39 @@
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 15:31:44 2014    Page   1
+
+Command line: C:\ASM68K\LNK68K.EXE  -c WORK.CMD -m 
+
+LIST S
+COMMON WORK=100000H
+LOAD WORK
+END
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 15:31:44 2014
+    Page   2
+
+
+
+OUTPUT MODULE NAME:    WORK
+OUTPUT MODULE FORMAT:  IEEE
+
+
+SECTION SUMMARY
+---------------
+
+SECTION    ATTRIBUTE                     START      END        LENGTH     ALIGN
+
+0          NORMAL                        00000000   00000000   00000000   2 (WORD)  
+WORK       COMMON                        00100000   0010FFFF   00010000   2 (WORD)  
+
+
+MODULE SUMMARY
+--------------
+
+MODULE         SECTION:START        SECTION:END       FILE
+
+WORK                 0:00000000           0:00000000  C:\AOF\GAME\WORK.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+
+
+
+START ADDRESS:   00000000
+
+Link Completed 

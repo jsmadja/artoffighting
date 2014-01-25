@@ -1,0 +1,17 @@
+cd bin
+del *.abs
+del *.out
+cd ..
+cd chara
+call make
+cd ..\em
+call make
+cd ..\game
+call make
+cd ..\hero
+call make
+cd ..\lang
+call make
+cd ..\sys
+call make
+cd ..

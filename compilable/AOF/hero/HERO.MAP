@@ -1,0 +1,92 @@
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 19:32:39 2014    Page   1
+
+Command line: C:\ASM68K\LNK68K.EXE  -c HERO.CMD -m 
+
+LIST D,S
+*MAKE  ABS HEROL
+*MAKE  @echo .
+*MAKE  @echo .
+
+*MAKE !if $d(WORK)
+*MAKE WORK=WORK.INC
+*MAKE !endif
+
+*MAKE !if $d(LABEL)
+*MAKE LABEL=LABEL.INC
+*MAKE !endif
+
+*MAKE !if $d(ACT_No)
+*MAKE ACT_No=ACT_No.INC
+*MAKE !endif
+
+*MAKE !if $d(CTRL_No)
+*MAKE CTRL_No=CTRL_No.INC
+*MAKE !endif
+
+*MAKE !if $d(GAME_SYM)
+*MAKE GAME_SYM=GAME_SYM.INC
+*MAKE !endif
+
+*MAKE !if $d(SCODE)
+*MAKE SCODE=SCODE.INC
+*MAKE !endif
+
+SECT HERO=12000H
+
+COMMON WORK=100000H
+INDEX ?A5,WORK,8000H
+
+LOAD GAME_SYM
+LOAD HERO_TBL
+LOAD HERO,MOVE_CHG,HERO_SET,HERO_ST2,DMG_SET,HERO_PM
+LOAD HERO_CML
+LOAD ATTACK
+
+END
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 19:32:40 2014
+    Page   2
+
+
+
+OUTPUT MODULE NAME:    HERO
+OUTPUT MODULE FORMAT:  IEEE
+
+
+SECTION SUMMARY
+---------------
+
+SECTION    ATTRIBUTE                     START      END        LENGTH     ALIGN
+
+0          NORMAL                        00000000   00000000   00000000   2 (WORD)  
+HERO       NORMAL CODE                   00012000   0001894B   0000694C   2 (WORD)  
+WORK       COMMON                        00100000   0010FFFF   00010000   2 (WORD)  
+
+
+MODULE SUMMARY
+--------------
+
+MODULE         SECTION:START        SECTION:END       FILE
+
+GAME_SYM             0:00000000           0:00000000  C:\AOF\HERO\GAME_SYM.OBJ   
+HERO_TBL          HERO:00012000        HERO:000120C5  C:\AOF\HERO\HERO_TBL.OBJ   
+HERO              HERO:000120C6        HERO:00013911  C:\AOF\HERO\HERO.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+MOVE_CHG          HERO:00013912        HERO:00014557  C:\AOF\HERO\MOVE_CHG.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+HERO_SET          HERO:00014558        HERO:0001552F  C:\AOF\HERO\HERO_SET.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+HERO_ST2          HERO:00015530        HERO:0001601F  C:\AOF\HERO\HERO_ST2.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+DMG_SET           HERO:00016020        HERO:00016D59  C:\AOF\HERO\DMG_SET.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+HERO_PM           HERO:00016D5A        HERO:000175F3  C:\AOF\HERO\HERO_PM.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+HERO_CML          HERO:000175F4        HERO:000178A3  C:\AOF\HERO\HERO_CML.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+ATTACK            HERO:000178A4        HERO:0001894B  C:\AOF\HERO\ATTACK.OBJ   
+
+
+
+START ADDRESS:   00000000
+
+Link Completed 

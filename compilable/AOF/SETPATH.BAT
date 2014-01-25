@@ -1,0 +1,1 @@
+set path=%path%;c:\mri\inc

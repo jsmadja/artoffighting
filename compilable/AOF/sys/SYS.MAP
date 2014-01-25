@@ -1,0 +1,75 @@
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 19:45:19 2014    Page   1
+
+Command line: C:\ASM68K\LNK68K.EXE  -c SYS.CMD -m 
+
+LIST D
+*MAKE  ABS SYSL
+*MAKE  @echo .
+*MAKE  @echo .
+
+*MAKE !if $d(WORK)
+*MAKE WORK=WORK.INC
+*MAKE !endif
+
+*MAKE !if $d(LABEL)
+*MAKE LABEL=LABEL.INC
+*MAKE !endif
+
+*MAKE !if $d(NEO_GEO)
+*MAKE NEO_GEO=NEO_GEO.INC
+*MAKE !endif
+
+*MAKE !if $d(MACRO)
+*MAKE MACRO=MACRO.INC
+*MAKE !endif
+
+*MAKE !if $d(SCODE)
+*MAKE SCODE=SCODE.INC
+*MAKE !endif
+
+SECT SYS=0A00H
+COMMON WORK=100000H
+INDEX ?A5,WORK,8000H
+LOAD PAL_COM,ACTION,SUB,SOUND,FIX
+END
+Microtec Research LNK68K  Version 7.0   Thu Jan 23 19:45:19 2014
+    Page   2
+
+
+
+OUTPUT MODULE NAME:    SYS
+OUTPUT MODULE FORMAT:  IEEE
+
+
+SECTION SUMMARY
+---------------
+
+SECTION    ATTRIBUTE                     START      END        LENGTH     ALIGN
+
+0          NORMAL                        00000000   00000000   00000000   2 (WORD)  
+SYS        SHORT CODE                    00000A00   00004F3B   0000453C   2 (WORD)  
+WORK       COMMON                        00100000   0010FFFF   00010000   2 (WORD)  
+
+
+MODULE SUMMARY
+--------------
+
+MODULE         SECTION:START        SECTION:END       FILE
+
+PAL_COM            SYS:00000A00         SYS:00001F13  C:\AOF\SYS\PAL_COM.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+ACTION             SYS:00001F14         SYS:0000401D  C:\AOF\SYS\ACTION.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+SUB                SYS:0000401E         SYS:000044BD  C:\AOF\SYS\SUB.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+SOUND              SYS:000044BE         SYS:00004951  C:\AOF\SYS\SOUND.OBJ   
+                  WORK:00100000        WORK:0010FFFF      
+FIX                  0:00000000           0:00000000  C:\AOF\SYS\FIX.OBJ   
+                   SYS:00004952         SYS:00004F3B      
+                  WORK:00100000        WORK:0010FFFF      
+
+
+
+START ADDRESS:   00000000
+
+Link Completed 
