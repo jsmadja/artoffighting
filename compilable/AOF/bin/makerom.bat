@@ -1,3 +1,4 @@
+del 044-p1.p1
 del rom.bin
 ..\..\rom_add\Release\rom_add rom.bin 0x80000 GAME.OUT 0x0 
 ..\..\rom_add\Release\rom_add rom.bin 0x80000 SYS.OUT 0xa00 0x11600

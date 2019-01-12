@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:29:47 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:29 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c LANG.CMD -m 
 
@@ -16,7 +16,7 @@ PUBLIC GEN_LCHILD=24000H
 PUBLIC GEN_PCHILD=24000H
 PUBLIC COLOR_COM_SET=24000H
 END
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:29:47 2019
+Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:29 2019
     Page   2
 
 

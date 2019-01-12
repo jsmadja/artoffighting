@@ -1,6 +1,6 @@
 keyb fr
 set path=%path%;c:\asm68k
 cd AOF
-make
+call make
 cd bin
-makeout
+call makeout

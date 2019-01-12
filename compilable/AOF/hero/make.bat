@@ -1,5 +1,5 @@
-del *.OBJ
-del *.ABS
+del *.obj
+del *.abs
 asm68k -I ../inc ATTACK.SRC
 asm68k -I ../inc DMG_SET.SRC
 asm68k -I ../inc GAME_SYM.SRC
