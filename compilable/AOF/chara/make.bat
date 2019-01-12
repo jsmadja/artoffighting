@@ -1,5 +1,5 @@
-del *.obj
-del *.abs
+del *.OBJ
+del *.ABS
 asm68k -I ../inc CH_BACK.SRC
 asm68k -I ../inc CH_DEMO.SRC
 asm68k -I ../inc CH_E1A.SRC

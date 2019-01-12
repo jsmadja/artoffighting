@@ -1,5 +1,5 @@
-del *.obj
-del *.abs
+del *.OBJ
+del *.ABS
 asm68k -I ../inc PAL_COM.SRC
 asm68k -I ../inc ACTION.SRC
 asm68k -I ../inc SUB.SRC

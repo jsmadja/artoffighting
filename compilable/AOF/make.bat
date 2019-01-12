@@ -1,5 +1,5 @@
 cd bin
-del *.abs
+del *.ABS
 del *.out
 cd ..
 cd chara

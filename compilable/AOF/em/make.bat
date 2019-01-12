@@ -1,5 +1,5 @@
-del *.obj
-del *.abs
+del *.OBJ
+del *.ABS
 asm68k -I ../inc COM_OPE.SRC
 asm68k -I ../inc DEF2_1P.SRC
 asm68k -I ../inc DEF2_2P.SRC
