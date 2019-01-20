@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:41 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:37 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c HK3.CMD -m 
 
@@ -39,7 +39,7 @@ LOAD EM5_TBL,EM6_TBL,EM7_TBL,EM8_TBL
 LOAD MOTION,EM_PACK,NEWS
 
 END
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:41 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:37 2019
     Page   2
 
 
@@ -96,7 +96,7 @@ EM_SP6             HK3:0001FA9E         HK3:0001FB85  C:\AOF\EM\EM_SP6.OBJ
 EM_SP7             HK3:0001FB86         HK3:0001FC6B  C:\AOF\EM\EM_SP7.OBJ   
 EM_SP8             HK3:0001FC6C         HK3:0001FD3D  C:\AOF\EM\EM_SP8.OBJ   
 EM_SP9             HK3:0001FD3E         HK3:0001FE43  C:\AOF\EM\EM_SP9.OBJ   
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:41 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:37 2019
     Page   3
 
 EM_SP10            HK3:0001FE44         HK3:0001FF21  C:\AOF\EM\EM_SP10.OBJ   

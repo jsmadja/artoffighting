@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:51 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:46 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c SYS.CMD -m 
 
@@ -32,7 +32,7 @@ COMMON WORK=100000H
 INDEX ?A5,WORK,8000H
 LOAD PAL_COM,ACTION,SUB,SOUND,FIX
 END
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:51 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:46 2019
     Page   2
 
 

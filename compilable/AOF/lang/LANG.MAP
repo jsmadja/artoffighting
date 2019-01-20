@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:50 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:45 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c LANG.CMD -m 
 
@@ -7,7 +7,7 @@ LIST D
 *MAKE  @echo .
 *MAKE  @echo .
 
-SECT LANG=80000H
+SECT LANG=3D800H
 COMMON WORK=100000H
 INDEX ?A5,WORK,8000H
 LOAD LANG2,LANG3
@@ -15,7 +15,7 @@ PUBLIC GEN_LCHILD=24000H
 PUBLIC GEN_PCHILD=24000H
 PUBLIC COLOR_COM_SET=24000H
 END
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:50 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:45 2019
     Page   2
 
 
@@ -29,7 +29,7 @@ SECTION SUMMARY
 
 SECTION    ATTRIBUTE                     START      END        LENGTH     ALIGN
 
-LANG       NORMAL CODE                   00080000   00085301   00005302   2 (WORD)  
+LANG       NORMAL CODE                   0003D800   00042AFF   00005300   2 (WORD)  
 WORK       COMMON                        00100000   0010FFFF   00010000   2 (WORD)  
 
 
@@ -38,9 +38,9 @@ MODULE SUMMARY
 
 MODULE         SECTION:START        SECTION:END       FILE
 
-LANG2             LANG:00080000        LANG:000828FF  C:\AOF\LANG\LANG2.OBJ   
+LANG2             LANG:0003D800        LANG:000400FD  C:\AOF\LANG\LANG2.OBJ   
                   WORK:00100000        WORK:0010FFFF      
-LANG3             LANG:00082900        LANG:00085301  C:\AOF\LANG\LANG3.OBJ   
+LANG3             LANG:000400FE        LANG:00042AFF  C:\AOF\LANG\LANG3.OBJ   
 
 
 

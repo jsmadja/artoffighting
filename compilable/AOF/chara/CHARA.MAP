@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:34 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:31 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c CHARA.CMD -m 
 
@@ -29,7 +29,7 @@ LOAD CH_E7N,CH_E7A,CH_E7D
 LOAD CH_E8N,CH_E8A,CH_E8D
 LOAD CH_TEST,CH_ETC,CH_DEMO
 END
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:34 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:31 2019
     Page   2
 
 
@@ -86,7 +86,7 @@ CH_E8A           CHARA:00037462       CHARA:000380B7  C:\AOF\CHARA\CH_E8A.OBJ
 CH_E8D           CHARA:000380B8       CHARA:000389E5  C:\AOF\CHARA\CH_E8D.OBJ   
 CH_TEST          CHARA:000389E6       CHARA:00039437  C:\AOF\CHARA\CH_TEST.OBJ   
 CH_ETC           CHARA:00039438       CHARA:00039ED1  C:\AOF\CHARA\CH_ETC.OBJ   
-Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:34 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:25:31 2019
     Page   3
 
 CH_DEMO          CHARA:00039ED2       CHARA:0003AA97  C:\AOF\CHARA\CH_DEMO.OBJ   
