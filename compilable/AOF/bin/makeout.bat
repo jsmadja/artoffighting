@@ -9,5 +9,5 @@ rem 0x19000
 iee2aout HK3.ABS   HK3.OUT
 rem 0x26000
 iee2aout CHARA.ABS CHARA.OUT
-rem 0x3d800
+rem 0x80000
 iee2aout LANG.ABS  LANG.OUT
