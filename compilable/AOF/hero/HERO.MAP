@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:27 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:49 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c HERO.CMD -m 
 
@@ -43,7 +43,7 @@ LOAD HERO_CML
 LOAD ATTACK
 
 END
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:27 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:49 2019
     Page   2
 
 

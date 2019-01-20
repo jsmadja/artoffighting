@@ -1,4 +1,4 @@
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:24 2019    Page   1
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:46 2019    Page   1
 
 Command line: C:\ASM68K\LNK68K.EXE  -c GAME.CMD -m 
 
@@ -50,7 +50,7 @@ LIST D
 SECT GAMES=05000H
 SECT GAME=05400H
 SECT MESS=3AE00H
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:24 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:46 2019
     Page   2
 
 
@@ -82,7 +82,7 @@ LOAD WORK
 PUBLIC CH_TABLE=26000H
 
 END
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:24 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:46 2019
     Page   3
 
 
@@ -139,7 +139,7 @@ RANK              GAME:0000CD0A        GAME:0000D667  C:\AOF\GAME\RANK.OBJ
                   WORK:00100000        WORK:0010FFFF      
 CARD              GAME:0000D668        GAME:0000DA4F  C:\AOF\GAME\CARD.OBJ   
                   WORK:00100000        WORK:0010FFFF      
-Microtec Research LNK68K  Version 7.0   Sat Jan 12 13:43:24 2019
+Microtec Research LNK68K  Version 7.0   Sun Jan 20 18:11:46 2019
     Page   4
 
 BONUS             GAME:0000DA50        GAME:0000ECE9  C:\AOF\GAME\BONUS.OBJ   
